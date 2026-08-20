@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <title>APT (15.21) 高度プロファイルタスク 参考図</title>
+
+  <rect x="0" y="0" width="820" height="800" fill="#ffffff" />
+
+  <!-- chart grid -->
+  <g stroke="#cfcfcf" stroke-width="1">
+    <!-- vertical gridlines: minutes 0-10 -->
+    <line x1="70"  y1="30" x2="70"  y2="510" />
+    <line x1="138" y1="30" x2="138" y2="510" />
+    <line x1="206" y1="30" x2="206" y2="510" />
+    <line x1="274" y1="30" x2="274" y2="510" />
+    <line x1="342" y1="30" x2="342" y2="510" />
+    <line x1="410" y1="30" x2="410" y2="510" />
+    <line x1="478" y1="30" x2="478" y2="510" />
+    <line x1="546" y1="30" x2="546" y2="510" />
+    <line x1="614" y1="30" x2="614" y2="510" />
+    <line x1="682" y1="30" x2="682" y2="510" />
+    <line x1="750" y1="30" x2="750" y2="510" />
+    <!-- horizontal gridlines: 0-3000ft step 500 -->
+    <line x1="70" y1="510" x2="750" y2="510" />
+    <line x1="70" y1="430" x2="750" y2="430" />
+    <line x1="70" y1="350" x2="750" y2="350" />
+    <line x1="70" y1="270" x2="750" y2="270" />
+    <line x1="70" y1="190" x2="750" y2="190" />
+    <line x1="70" y1="110" x2="750" y2="110" />
+    <line x1="70" y1="30"  x2="750" y2="30" />
+  </g>
+
+  <!-- axes -->
+  <rect x="70" y="30" width="680" height="480" fill="none" stroke="#333333" stroke-width="1.5" />
+
+  <!-- y-axis labels (feet) -->
+  <g font-size="16" fill="#333333" text-anchor="end">
+    <text x="60" y="515">0</text>
+    <text x="60" y="435">500</text>
+    <text x="60" y="355">1000</text>
+    <text x="60" y="275">1500</text>
+    <text x="60" y="195">2000</text>
+    <text x="60" y="115">2500</text>
+    <text x="60" y="35">3000</text>
+  </g>
+
+  <!-- x-axis labels (minutes) -->
+  <g font-size="16" fill="#333333" text-anchor="middle">
+    <text x="70"  y="534">0</text>
+    <text x="138" y="534">1</text>
+    <text x="206" y="534">2</text>
+    <text x="274" y="534">3</text>
+    <text x="342" y="534">4</text>
+    <text x="410" y="534">5</text>
+    <text x="478" y="534">6</text>
+    <text x="546" y="534">7</text>
+    <text x="614" y="534">8</text>
+    <text x="682" y="534">9</text>
+    <text x="750" y="534">10</text>
+  </g>
+  <text x="410" y="562" font-size="17" fill="#333333" text-anchor="middle">Minutes</text>
+
+  <!-- outer band (B): 1x -->
+  <polygon points="70,158 206,158 274,254 410,238 478,326 512,334 614,286 682,326 750,334 750,350 682,342 614,302 512,350 478,342 410,254 274,270 206,174 70,174"
+           fill="#bcd7f2" fill-opacity="0.75" />
+  <polygon points="70,190 206,190 274,286 410,270 478,358 512,366 614,318 682,358 750,366 750,382 682,374 614,334 512,382 478,374 410,286 274,302 206,206 70,206"
+           fill="#bcd7f2" fill-opacity="0.75" />
+
+  <!-- inner band (A): 2x -->
+  <polygon points="70,174 206,174 274,270 410,254 478,342 512,350 614,302 682,342 750,350 750,366 682,358 614,318 512,366 478,358 410,270 274,286 206,190 70,190"
+           fill="#3f7fbf" fill-opacity="0.75" />
+
+  <!-- band boundary lines -->
+  <g fill="none" stroke="#14335c" stroke-width="2">
+    <path d="M70,158 L206,158 L274,254 L410,238 L478,326 L512,334 L614,286 L682,326 L750,334" />
+    <path d="M70,174 L206,174 L274,270 L410,254 L478,342 L512,350 L614,302 L682,342 L750,350" />
+    <path d="M70,190 L206,190 L274,286 L410,270 L478,358 L512,366 L614,318 L682,358 L750,366" />
+    <path d="M70,206 L206,206 L274,302 L410,286 L478,374 L512,382 L614,334 L682,374 L750,382" />
+  </g>
+
+  <!-- annotation: 1250ft -->
+  <line x1="700" y1="292" x2="740" y2="270" stroke="#333333" stroke-width="1.5" />
+  <text x="745" y="266" font-size="16" fill="#333333" font-style="italic">1250ft</text>
+
+  <!-- legend -->
+  <g font-size="16" fill="#333333">
+    <rect x="70" y="600" width="680" height="34" fill="#bcd7f2" fill-opacity="0.75" stroke="#333333" />
+    <text x="410" y="622" text-anchor="middle">B（＋50ft 〜 150ft）</text>
+
+    <rect x="70" y="634" width="680" height="34" fill="#3f7fbf" fill-opacity="0.75" stroke="#333333" />
+    <text x="410" y="656" text-anchor="middle" fill="#ffffff">A（＋0ft 〜 50ft）結果 x2</text>
+
+    <rect x="70" y="668" width="680" height="34" fill="#3f7fbf" fill-opacity="0.75" stroke="#333333" />
+    <text x="410" y="690" text-anchor="middle" fill="#ffffff">A（－0ft 〜 50ft）結果 x2</text>
+
+    <rect x="70" y="702" width="680" height="34" fill="#bcd7f2" fill-opacity="0.75" stroke="#333333" />
+    <text x="410" y="724" text-anchor="middle">B（－50ft 〜 150ft）</text>
+  </g>
+
+  <text x="70" y="765" font-size="13" fill="#777777">Example sketch（参考図・数値は一例）</text>
+</svg>
