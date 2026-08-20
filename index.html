@@ -69,6 +69,18 @@
     font-size: 12px;
     color: #777;
   }
+
+  .section-image-original-link {
+    display: inline-block;
+    margin: 2px 0 8px;
+    font-size: 13px;
+    color: #1a73e8;
+    text-decoration: none;
+  }
+
+  .section-image-original-link:active {
+    text-decoration: underline;
+  }
 </style>
 </head>
 
@@ -647,7 +659,9 @@ const AXMER_TASKS = {
       },
       "image": "apt-sketch.svg",
       "image_alt": "APT（15.21）高度プロファイルタスクの空域設定 参考図",
-      "image_caption": "Example sketch（参考図）"
+      "image_caption": "Example sketch（参考図・再現図）",
+      "image_original": "IMG_4819.jpeg",
+      "image_original_label": "オリジナル画像（原本スキャン）を見る"
     },
     "15.21.3": {
       "text_en": "The result is the accumulated time in the set airspace(s). Greatest result is best.",
@@ -733,6 +747,16 @@ function renderTasks() {
           caption.className = "section-image-caption";
           caption.textContent = sec.image_caption;
           secDiv.appendChild(caption);
+        }
+
+        if (sec.image_original) {
+          const originalLink = document.createElement("a");
+          originalLink.className = "section-image-original-link";
+          originalLink.href = sec.image_original;
+          originalLink.target = "_blank";
+          originalLink.rel = "noopener";
+          originalLink.textContent = sec.image_original_label || "オリジナル画像を見る";
+          secDiv.appendChild(originalLink);
         }
       }
 
